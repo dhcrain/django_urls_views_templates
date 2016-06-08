@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from wiring_up.views import bbstat_view
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^baseballstat$', bbstat_view),
 ]
